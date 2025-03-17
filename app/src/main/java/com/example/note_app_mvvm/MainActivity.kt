@@ -13,14 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.note_app_mvvm.model.TodoItem
 import com.example.note_app_mvvm.ui.theme.NoteappmvvmTheme
 import kotlin.math.log
 
-data class TodoItem(
-    val title: String,
-    val description: String,
-    var isChecked: Boolean = false
-)
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
